@@ -1,0 +1,27 @@
+@import '../common/variables.scss';
+
+.button {
+    z-index: 1;
+    font: 400 16px/1.2 'Arial', sans-serif;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: $mainColor;
+    color: $brightestColor;
+    border-radius: 30px;
+    border: none;
+
+    &:hover {
+        background-color: $darkMainColor;
+    }
+
+    &.disabled {
+        background-color: $mainColorDisabled;
+        cursor: not-allowed;
+
+        &:hover {
+            background-color: $mainColorDisabled;
+        }
+    }
+
+    
+}

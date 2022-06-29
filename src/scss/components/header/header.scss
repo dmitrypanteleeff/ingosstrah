@@ -1,0 +1,61 @@
+@import '../../common/variables.scss';
+
+@import './header-link.scss';
+
+.header {
+    background-color: $brightColor;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+
+    }
+
+    &__logo-link {
+        text-decoration: none;
+        color:$mainColor;
+        text-transform: uppercase;
+    }
+
+    &__header-links {
+        display: flex;
+        justify-content: space-between;
+
+        max-width: 433px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .header {
+        &__header-links {
+            max-width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .header {
+        &__header-links {
+            max-width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .header {
+        &__container {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+        &__header-links {
+            max-width: none;
+            justify-content: flex-end;
+        }
+    }
+}

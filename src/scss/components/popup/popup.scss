@@ -1,0 +1,38 @@
+@import '../../common/variables.scss';
+
+.popup {
+    cursor: pointer;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    transform: translateY(-120%);
+    transition: transform 500ms ease 0ms;
+
+    &.active {
+        transform: translateY(0%);
+        transition: transform 500ms ease 0ms;
+    }
+
+    &__content {
+        padding: 30px;
+        max-width: 285px;
+        width: 100%;
+        background-color: $brightestColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        color: $mainColor;
+    }
+}

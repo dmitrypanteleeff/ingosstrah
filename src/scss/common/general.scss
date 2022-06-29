@@ -1,0 +1,122 @@
+@import './variables';
+
+body {
+    background-color: $brightestColor;
+    background-image: url("@img/picture.jpg") 0 0 no-repeat;
+
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.title {
+    margin: 0;
+    font: 700 40px/1.1 'Arial', san-serif;
+    color: $mainColor;
+
+    &-second {
+        margin: 0;
+        font: 700 36px/1.1 'Arial', san-serif;
+        color: $mainColor;
+    }
+}
+
+.text {
+    margin: 0;
+    font: 400 20px/1.1 'Arial', san-serif;
+    color: $neutralDarkColor;
+    
+    &-second {
+        margin: 0;
+        font: 400 16px/1.1 'Arial', san-serif;
+        color: $neutralDarkColor;
+    }
+
+
+    &-nowrap {
+        white-space: nowrap;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1199px) {
+    .container {
+        padding-left: 4%;
+        padding-right: 4%;
+        max-width: none;
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .title {
+        font-size: 36px;
+
+        &-second {
+            font-size: 32px;
+        }
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .title {
+        font-size: 32px;
+
+        &-second {
+            font-size: 28px;
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    .container {
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+
+    .title {
+        font-size: 28px;
+
+        &-second {
+            font-size: 22px;
+        }
+    }
+
+    .text {
+        font-size: 16px;
+        
+        &-second {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width:374px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .title {
+        font-size: 24px;
+    }
+}
+

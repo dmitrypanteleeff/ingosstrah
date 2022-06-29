@@ -1,0 +1,36 @@
+<form id="@@id" class="contact-box" method="post">
+    <h2 class="title contact-box__title">
+        @@title
+    </h2>
+    <p class="text contact-box__text">
+        @@text
+    </p>
+    @@include('../../../UI/input.html',{
+        'class-input-row':'contact-box__input-row',
+        'class-input-item':'contact-box__input-item contact-box__input-name',
+        'type':'text',
+        'placeholder':'Ф.И.О.',
+        'name':'firstname'})
+    @@include('../../../UI/input.html',{
+        'class-input-row':'contact-box__input-row',
+        'class-input-item':'contact-box__input-item contact-box__input-phone',
+        'type':'text',
+        'placeholder':'+ 7',
+        'name':'phone'
+    })
+    @@include('../../../UI/input.html',{
+        'class-input-row':'contact-box__input-row',
+        'class-input-item':'contact-box__input-item contact-box__input-email',
+        'type':'text',
+        'placeholder':'Email', 
+        'name':'mail',
+    })
+
+    
+    @@include('../../../UI/button.html',{'class':'contact-box__btn','text':'Забронировать','type':'submit'})
+    <div class="input__row-confirm contact-box__row-confirm-input">
+        <input class="input__check-rules contact-box__check-rules" checked="" type="checkbox">
+        <label class="text input__text-rules contact-box__text-rules" >Подтверждаю согласие на обработку персональных данных и получение информации​ о других продуктах
+            и&nbsp;услугах&nbsp;СПАО&nbsp;«Ингосстрах»&nbsp;и его партнеров.</label>
+    </div>
+</form>

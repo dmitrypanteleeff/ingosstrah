@@ -1,0 +1,127 @@
+@import '../../common/variables.scss';
+
+.main {
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $brightColor;
+
+    &__container {
+        padding-right: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__column {
+        width: 50%;
+    }
+
+    &__img-inner {
+        max-width: 495px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        &-text {
+            line-height: 1.1;
+            color: $neutralDarkColor;
+            margin-bottom: 5px;
+        }
+
+        &-title {
+            line-height: 1.1;
+            color: $mainColor;
+            margin-bottom: 5px;
+        }
+
+
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .main {
+        &__info {
+            width: 520px;
+            flex-shrink: 0;
+        }
+
+        &__img-inner { 
+            max-width: 495px;
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .main {
+        &__info {
+            width: 450px;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .main {
+        &__info {
+            width: 400px;
+            
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .main {
+        align-items: flex-start;
+        
+
+        &__container {
+            flex-direction: column;           
+        }
+
+        &__info {
+            margin-bottom: 30px;
+            order:1;
+            align-items: center;
+
+            &-text {
+                text-align: center;
+            }
+
+            &-title {
+                text-align: center;
+            }
+        }
+
+        &__img-inner {
+            width: 250px;
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    .main {
+        min-height: 280px;
+
+        &__img-inner {
+            width: 160px;
+        }
+
+        &__info {
+            max-width: 320px;
+            width: 100%;
+        }
+    }
+
+}
+
+

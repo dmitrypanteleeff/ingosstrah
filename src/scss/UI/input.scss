@@ -1,0 +1,139 @@
+@import '../common/variables.scss';
+
+.input {
+
+    &__row {
+        position: relative;
+        z-index: 1;
+
+        &.success{
+            &:after {
+                content: '';
+                top:25%;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                right:29px;
+                background-image: url($checkImgURL);
+            }
+
+            & .input__item {
+                border: 0.5px solid $mainColorDisabled;
+            }   
+        }
+
+        &.error {
+            & .input__item {
+                border: 0.5px solid $dangerColor;
+            }
+
+            & .input__item-small {
+                visibility: visible;
+            }
+        }
+    }
+
+    &__item-small {
+        display: block;
+        font-size: 9px;
+        padding-left: 20px;
+        color: $dangerColor;
+        position: absolute;
+        height: 0;
+        bottom: -2px;
+        visibility: hidden;
+    }
+
+    &__img {
+        width: 100%;
+
+        &-inner--success {
+            display: flex;
+            width: 20px;
+            position: absolute;
+            // top: 50%;
+            right: 0;
+        }
+    }
+    
+    // &__item:-webkit-autofill::first-line {
+    //     font-size: 16px;
+    //     color: $neutralDarkColor;
+    // }
+
+    
+
+    &__item {
+        background-color: $brightestColor;
+        border: 0.5px solid $brightestColor;
+        color: $neutralDarkColor;
+        // outline: 0.5px solid $brightestColor;
+        outline: none;
+        font-size: 16px;
+
+        padding: 10px 20px;
+        border-radius: 30px;
+
+
+
+
+    }
+
+    // &__item:-webkit-autofill,
+    // &__item:-webkit-autofill:hover,
+    // &__item:-webkit-autofill:focus,
+    // &__item:-webkit-autofill:active {
+    //     font-size: 16px;
+    //     outline: none;
+    //     color: $neutralDarkColor;
+    //     background-color: red;
+
+    //     // box-shadow: 0 0 0 30px $brightestColor inset;
+    //     box-shadow: 0 0 0 30px red inset;
+    //     // -webkit-box-shadow: 0 0 0 30px $brightestColor inset;
+    //     -webkit-text-fill-color: $mainColorDisabled;
+    // }
+
+    &__item:focus-visible,
+    &__item:focus,
+    &__item:active {        
+        border: 0.5px solid $mainColor;
+        outline: none;
+    }
+
+    // &__item::-webkit-input-placeholder,
+    // &__item:-moz-placeholder,
+    // &__item::-moz-placeholder,
+    // &__item::-ms-input-placeholder
+    // &__item::placeholder {
+    //     background-color: red;
+    //     color: red;
+    //     //color: $mainColorDisabled!important;
+    //     font-size: 16px;
+    // } 
+
+    &__item:-webkit-autofill,
+    &__item:-webkit-autofill:hover,
+    &__item:-webkit-autofill:focus,
+    &__item:-webkit-autofill:active {
+        box-shadow: 0 0 0 30px $brightestColor inset;
+        -webkit-box-shadow: 0 0 0 30px $brightestColor inset;
+        -webkit-text-fill-color: $mainColorDisabled;
+    }
+
+    &__item::-webkit-input-placeholder {
+        color: $mainColorDisabled;
+    }
+
+    &__item::-moz-placeholder {
+        color: $mainColorDisabled;
+    }
+
+    &__item::-moz-placeholder {
+        color: $mainColorDisabled;
+    }
+
+    &__item::-ms-input-placeholder {
+        color: $mainColorDisabled;
+    }
+}

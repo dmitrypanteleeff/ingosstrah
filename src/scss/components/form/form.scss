@@ -1,0 +1,132 @@
+@import '../../common/variables.scss';
+@import './components/contact-box.scss';
+
+.form {
+    background-color: $lightMainColor;
+    padding: 0 0 0 0;
+
+    &__contact-box {
+        padding-top: 30px;
+        position: relative;
+    }
+
+    &__bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 0;
+
+        &-one {
+            top: 295px;
+            height: 31px;
+            width: 118px;
+            left: 10%;
+            background-image: url($cloudLeftURL);
+        }
+
+        &-two {
+            top: 160px;
+            background-image: url($cloudLeftURL);
+            left: 12%;
+            height: 46px;
+            width: 123px;
+        }
+
+        &-three {
+            top: 230px;
+            width: 214px;
+            height: 50px;
+            left: 2%;
+            background-image: url($cloudDoubleRightURL);
+            
+        }
+
+        &-four {
+            top: 138px;
+            width: 120px;
+            height: 32px;
+            right: 12%;
+            background-image: url($cloudLeftURL);
+        }
+
+        &-five {
+            top: 178px;
+            width: 134px;
+            height: 35px;
+            right: 2%;
+            background-image: url($cloudRightURL);
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .form {
+        background-color: $lightBgColor;
+
+        &__contact-box {
+            background-color: $lightMainColor;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form {
+        &__bg {
+            
+    
+            &-one {
+                top: 19%;
+                height: 31px;
+                width: 80px;
+                left: 2%;
+                background-image: url($cloudDoubleRightURL);
+            }
+    
+            &-two {
+                top: 93%;
+                background-image: url($cloudLeftURL);
+                left: 12%;
+                height: 25px;
+                width: 40px;
+                
+            }
+    
+            &-three {
+                top: 0%;
+                width: 115px;
+                height: 35px;
+                left: auto;
+                right: 2%;
+                background-image: url($cloudLeftURL);
+                
+                
+            }
+    
+            &-four {
+                top: 22%;
+                width: 115px;
+                height: 32px;
+                right: 2%;
+                background-image: url($cloudRightURL);
+            }
+    
+            &-five {
+                top: 92%;
+                width: 54px;
+                height: 35px;
+                top: 93%;
+                right: 4%;
+                background-image: url($cloudRightURL);
+            }
+        }
+    
+    }
+}

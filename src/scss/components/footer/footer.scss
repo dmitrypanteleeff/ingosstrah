@@ -1,0 +1,68 @@
+@import '../../common/variables.scss';
+
+.footer {
+    background-color: $lightMainColor;
+    padding: 30px 0;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__info {
+        margin-bottom: 13px;
+    }
+
+
+
+    &__soc-links {
+        display: flex;
+    }
+
+    &__soc-link {
+        text-decoration: none;
+        width: 32px;
+        height: 32px;
+        display: block;
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0px;
+
+        &:not(:last-child) {
+            margin-right: 14px;
+        }
+
+        &.vk {
+            background-image: url('../img/vk-sprite.svg');
+        }
+
+        &.yt {
+            background-image: url('../img/yt-sprite.svg');
+        }
+
+        &.inst {
+            background-image: url('../img/inst-sprite.svg');
+        }
+
+        &.fb {
+            background-image: url('../img/fb-sprite.svg');
+        }
+
+    }
+
+    &__soc-link:hover {
+        
+        background-position: 0 100%; 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        &__info {
+            margin-bottom: 15px;
+        }
+    }
+}
