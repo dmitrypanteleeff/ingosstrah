@@ -51,15 +51,10 @@
             display: flex;
             width: 20px;
             position: absolute;
-            // top: 50%;
             right: 0;
         }
     }
     
-    // &__item:-webkit-autofill::first-line {
-    //     font-size: 16px;
-    //     color: $neutralDarkColor;
-    // }
 
     
 
@@ -67,7 +62,6 @@
         background-color: $brightestColor;
         border: 0.5px solid $brightestColor;
         color: $neutralDarkColor;
-        // outline: 0.5px solid $brightestColor;
         outline: none;
         font-size: 16px;
 
@@ -79,20 +73,6 @@
 
     }
 
-    // &__item:-webkit-autofill,
-    // &__item:-webkit-autofill:hover,
-    // &__item:-webkit-autofill:focus,
-    // &__item:-webkit-autofill:active {
-    //     font-size: 16px;
-    //     outline: none;
-    //     color: $neutralDarkColor;
-    //     background-color: red;
-
-    //     // box-shadow: 0 0 0 30px $brightestColor inset;
-    //     box-shadow: 0 0 0 30px red inset;
-    //     // -webkit-box-shadow: 0 0 0 30px $brightestColor inset;
-    //     -webkit-text-fill-color: $mainColorDisabled;
-    // }
 
     &__item:focus-visible,
     &__item:focus,
@@ -100,17 +80,6 @@
         border: 0.5px solid $mainColor;
         outline: none;
     }
-
-    // &__item::-webkit-input-placeholder,
-    // &__item:-moz-placeholder,
-    // &__item::-moz-placeholder,
-    // &__item::-ms-input-placeholder
-    // &__item::placeholder {
-    //     background-color: red;
-    //     color: red;
-    //     //color: $mainColorDisabled!important;
-    //     font-size: 16px;
-    // } 
 
     &__item:-webkit-autofill,
     &__item:-webkit-autofill:hover,
@@ -135,5 +104,37 @@
 
     &__item::-ms-input-placeholder {
         color: $mainColorDisabled;
+    }
+}
+
+@media screen and (max-width:1199px){
+    .input {
+        &__item-small {
+            font-size: 9px;
+        }
+    }
+}
+
+@media screen and (max-width:991px){
+    .input {
+        &__item-small {
+            font-size: 9px;
+        }
+    }
+}
+
+@media screen and (max-width:767px){
+    .input {
+        &__item-small {
+            font-size: 9px;
+        }
+    }
+}
+
+@media screen and (max-width:575px){
+    .input {
+        &__item-small {
+            font-size: 9px;
+        }
     }
 }

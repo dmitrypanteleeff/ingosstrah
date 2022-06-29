@@ -1301,6 +1301,10 @@ button {
     width: auto;
   }
 
+  .input__item-small {
+    font-size: 9px;
+  }
+
   .main__info {
     width: 520px;
     -ms-flex-negative: 0;
@@ -1330,6 +1334,10 @@ button {
 }
 
 @media screen and (max-width: 991px) {
+  .input__item-small {
+    font-size: 9px;
+  }
+
   .header-link__img-inner {
     width: 32px;
     margin-right: 10px;
@@ -1462,6 +1470,10 @@ button {
     font-size: 28px;
   }
 
+  .input__item-small {
+    font-size: 9px;
+  }
+
   .header-link__text {
     display: none;
   }
@@ -1588,6 +1600,10 @@ button {
 
   .text-second {
     font-size: 16px;
+  }
+
+  .input__item-small {
+    font-size: 9px;
   }
 
   .header-link__img-inner {
