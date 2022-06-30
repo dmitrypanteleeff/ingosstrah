@@ -27,48 +27,13 @@
         width: 100%;
     }
 
-    &__check-rules {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -ms-appearance: none;
-        -o-appearance: none;
-        -khtml-appearance: none;
-        background-color: transparent;
-        border: 1.5px solid $mainColorDisabled;
-        padding: 9px;
-        border-radius: 2px;
+    &__row-confirm-input {
         display: inline-block;
         position: relative;
-        margin-left: 0;
-        margin-right: 10px;
+        padding-left: 0px;
+        line-height: 20px;
         cursor: pointer;
-
-        &:checked {
-            border: 1.5px solid $mainColor;
-        }
-    }
-
-    &__check-rules:checked:after {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -ms-appearance: none;
-        -o-appearance: none;
-        -khtml-appearance: none;
-        content: '\2714';
-        font-size: 29px;
-        position: absolute;
-        top: -9px;
-        left: 0px;
-        color: $mainColor;
-    }
-
-    &__row-confirm-input {
-        display: flex;
-        align-items: center;
         max-width: 320px;
-        width: 100%;
-
-        margin-bottom: 33px;
     }
 
     &__text-rules {

@@ -29,8 +29,9 @@
     
     @@include('../../../UI/button.html',{'class':'contact-box__btn','text':'Забронировать','type':'submit'})
     <div class="input__row-confirm contact-box__row-confirm-input">
-        <input class="input__check-rules contact-box__check-rules" checked="" type="checkbox">
-        <label class="text input__text-rules contact-box__text-rules" >Подтверждаю согласие на обработку персональных данных и получение информации​ о других продуктах
-            и&nbsp;услугах&nbsp;СПАО&nbsp;«Ингосстрах»&nbsp;и его партнеров.</label>
+            <input type="checkbox" class="input__check-rules contact-box__check-rules custom-checkbox" id="confirm" name="confirm" value="yes">
+            <label for="confirm" class="text input__text-rules contact-box__text-rules">Подтверждаю согласие на обработку персональных данных и получение информации​ о других продуктах
+                и&nbsp;услугах&nbsp;СПАО&nbsp;«Ингосстрах»&nbsp;и его партнеров.</label>
+    
     </div>
 </form>
